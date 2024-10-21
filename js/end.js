@@ -15,7 +15,7 @@ const saveHandler = () => {
     highScores.push(finalScore)
     highScores.sort((a ,b) => b.score - a.score)
     highScores.splice(10)
-    localStorage.setItem("highScores" , highScores)
+    localStorage.setItem("highScores" , JSON.stringify(highScores))
     localStorage.removeItem("score")
     window.location.assign("/")
   }
