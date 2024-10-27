@@ -55,6 +55,11 @@
   flex-direction: column;
 }
 
+#question-box > div {
+  display: flex;
+  flex-direction: column;
+}
+
 h3 {
   background-color: #6757d9;
   color: #fff;
@@ -118,4 +123,18 @@ h3 {
 
 #error {
   display: none;
+}
+
+@media (max-width: 480px) {
+  #container {
+    width: 90%;
+  }
+  #question-box > div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .answer-text {
+    width: 40%;
+  }
 }/*# sourceMappingURL=game.css.map */
