@@ -17,7 +17,7 @@ const saveHandler = () => {
     highScores.splice(10)
     localStorage.setItem("highScores" , JSON.stringify(highScores))
     localStorage.removeItem("score")
-    window.location.assign("/")
+    window.location.assign("./")
   }
 };
 
